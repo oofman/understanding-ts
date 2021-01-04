@@ -18,7 +18,7 @@ TS uses "static types" (set during development)
 ----------------------------------------------------------------
 1  - TS Basics
 2  - TS Compiler & Config Deep dive
-3  - Next-Get JS Compiled
+3  - Next-Gen JS Compiled
 4  - Classes & Interfaces
 5  - Advanced Types & TS Features
 6  - Generics
@@ -54,9 +54,24 @@ never:
 ----------------------------------------------------------------
 Section 2: TS Compiler & Config Deep dive
 ----------------------------------------------------------------
+Start server on localhost:3000
+$ npm start
+
 Compile TS file: 
 $ tsc app.ts
 
 Compile continuously (watch mode):
-$ tsc app.ts --watch
+$ tsc app.ts --watch (or -w for short-hand)
 
+Initialize TS Project:
+$ tsc --init (creates tsconfig.json file in root)
+$ tsc (compiles all *.ts files)
+$ tsc -w (compiles all *.ts files and enable watch mode)
+
+tsconfig Docs: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+Compiler Config Docs: https://www.typescriptlang.org/docs/handbook/compiler-options.html
+VS Code TS Debugging: https://code.visualstudio.com/docs/typescript/typescript-debugging
+
+----------------------------------------------------------------
+Section 3:
+----------------------------------------------------------------
