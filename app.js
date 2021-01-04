@@ -1,7 +1,12 @@
-function add(n1, n2) {
-    return n1 + n2;
+var userInput;
+var userName;
+userInput = 4;
+userInput = "Something";
+if (typeof userInput === "string") {
+    userName = userInput;
 }
-var number1 = '5';
-var number2 = 2.8;
-var result = add(number1, number2);
+function generateError(msg, code) {
+    throw { message: msg, errorCode: code };
+}
+var result = generateError('In here error', 501);
 console.log(result);

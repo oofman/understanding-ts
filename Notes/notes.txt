@@ -12,6 +12,9 @@ TS Additions:
 - Decorators (Meta-Features)
 - Interfaces or Generics (Non-JS Features)
 - Next-gen JS Features (compiled down for old)
+
+JS uses "dynamic types" (resolved at runtime)
+TS uses "static types" (set during development)
 ----------------------------------------------------------------
 1  - TS Basics
 2  - TS Compiler & Config Deep dive
@@ -29,7 +32,21 @@ TS Additions:
 ----------------------------------------------------------------
 Core Types:
 ------------
-Number: 1, 5.3, -10
-String: 'Hi', "Hi", `Hi`
-Boolean: true / false
+number:   1, 5.3, -10
+string:   'Hi', "Hi", `Hi`
+boolean:  true / false
+object:   {age: 30}
+array:    [1, 2, 3, 'Something']
+Tuple:    [1,2]
+Enum:     enum {NEW,OLD}
+Any:      *
+-------------
+TS Types:
+-------------
+union:    (string | number)
+literal:  ('as-number' | 'as-string')
+alias:    type Combinable = ('as-number' | 'as-string')
+function: (a: number, b: string) => number
+unknown:  little better than any
+never:    
 ----------------------------------------------------------------
