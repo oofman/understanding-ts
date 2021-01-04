@@ -1,0 +1,35 @@
+----------------------------------------------------------------
+Basic Notes:
+------------
+TS = A JS Superset (A Language building up on JS)
+Adds new Features & Advantages to JS
+Browsers can't execute it (IE: Node.js also cant executed TS)
+
+TS -> Compiled to -> JS
+
+TS Additions:
+- Types
+- Decorators (Meta-Features)
+- Interfaces or Generics (Non-JS Features)
+- Next-gen JS Features (compiled down for old)
+----------------------------------------------------------------
+1  - TS Basics
+2  - TS Compiler & Config Deep dive
+3  - Next-Get JS Compiled
+4  - Classes & Interfaces
+5  - Advanced Types & TS Features
+6  - Generics
+7  - Decorators
+8  - Full Project from scratch
+9  - Namespaces & Modules
+10 - Webpack & TS
+11 - 3rd Party Libs & TS
+12 - React & TS 
+13 - NodeJS & TS
+----------------------------------------------------------------
+Core Types:
+------------
+Number: 1, 5.3, -10
+String: 'Hi', "Hi", `Hi`
+Boolean: true / false
+----------------------------------------------------------------
