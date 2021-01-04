@@ -30,6 +30,8 @@ TS uses "static types" (set during development)
 12 - React & TS 
 13 - NodeJS & TS
 ----------------------------------------------------------------
+Section 1: TS Basics
+----------------------------------------------------------------
 Core Types:
 ------------
 number:   1, 5.3, -10
@@ -50,3 +52,11 @@ function: (a: number, b: string) => number
 unknown:  little better than any
 never:    
 ----------------------------------------------------------------
+Section 2: TS Compiler & Config Deep dive
+----------------------------------------------------------------
+Compile TS file: 
+$ tsc app.ts
+
+Compile continuously (watch mode):
+$ tsc app.ts --watch
+
