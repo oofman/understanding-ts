@@ -1,9 +1,11 @@
 "use strict";
-const button = document.querySelector("button");
-function clickHandler(msg) {
-    console.log('Clicked! ' + msg);
-}
-if (button) {
-    button.addEventListener("click", clickHandler.bind(null, 'Your Here'));
-}
+const names = [];
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("This is done!");
+    }, 2000);
+});
+promise.then(data => {
+    data.split(' ');
+});
 //# sourceMappingURL=app.js.map

@@ -54,6 +54,9 @@ never:
 ----------------------------------------------------------------
 Section 2: TS Compiler & Config Deep dive
 ----------------------------------------------------------------
+Install dependancies
+$ npm install
+
 Start server on localhost:3000
 $ npm start
 
@@ -73,5 +76,49 @@ Compiler Config Docs: https://www.typescriptlang.org/docs/handbook/compiler-opti
 VS Code TS Debugging: https://code.visualstudio.com/docs/typescript/typescript-debugging
 
 ----------------------------------------------------------------
-Section 3:
+Section 3: Next-Gen JS Compiled
 ----------------------------------------------------------------
+List of supported functionalities:
+https://kangax.github.io/compat-table/es6/
+
+var scope = global / function
+let/const = block scope
+
+rest parameters
+const add = (...numbers: number[]) => {};
+
+// Destucturing array
+const [hobby1, hobby2] = hobbies;
+
+----------------------------------------------------------------
+Section 4: Classes & Interfaces
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+Section 5: Advanced Types & TS Features
+----------------------------------------------------------------
+- Intersection types (combine other types)
+- Type Gaurds: 
+  - if (typeof a === "string") {}
+  - if ('privileges' in emp) {}
+  - if (vehicle instanceof Truck) {}
+- Type Casting:
+  - <HTMLInputElement>document.getElementById('user-input')!;
+  - document.getElementById('user-input')! as HTMLInputElement;
+  - (inputElement as HTMLInputElement).value = 'Hi there!';
+- Optional Chaining:
+  - fetchedUserData?.job?.title
+- Nullish Coalecing
+  - const stroredData = userInput ?? 'Default';
+  - only if null or undefined
+- More on Advanced Types: 
+  - https://www.typescriptlang.org/docs/handbook/advanced-types.html
+
+----------------------------------------------------------------
+Section 6: Generics
+----------------------------------------------------------------
+1 - Arrays
+2 - Promise 
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
