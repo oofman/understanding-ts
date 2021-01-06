@@ -133,3 +133,7 @@ Section 7: Decorators
 
 More on Decorators: https://www.typescriptlang.org/docs/handbook/decorators.html
 
+----------------------------------------------------------------
+Section 8: Full Project from scratch
+----------------------------------------------------------------
+
