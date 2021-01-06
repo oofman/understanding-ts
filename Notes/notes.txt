@@ -118,7 +118,15 @@ Section 5: Advanced Types & TS Features
 ----------------------------------------------------------------
 Section 6: Generics
 ----------------------------------------------------------------
-1 - Arrays
-2 - Promise 
-    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+More on Generics:
+- https://www.typescriptlang.org/docs/handbook/generics.html
+Promise (JS):
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+Primitive VS Ref Types:
+- https://academind.com/tutorials/reference-vs-primitive-values/
+Utility Types:
+- https://www.typescriptlang.org/docs/handbook/utility-types.html
 
+----------------------------------------------------------------
+Section 7: Decorators
+----------------------------------------------------------------
