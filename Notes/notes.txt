@@ -139,4 +139,7 @@ Section 8: Full Project from scratch
 
 More on Drag & Drop: https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
 
+----------------------------------------------------------------
+Section 9: Namespaces & Modules
+----------------------------------------------------------------
 
