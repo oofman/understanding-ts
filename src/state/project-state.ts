@@ -1,8 +1,6 @@
-import { Project, ProjectStatus } from "../models/project.js";
+import { Project, ProjectStatus } from '../models/project';
 
-
-
-// Project State management
+// Project State Management
 type Listener<T> = (items: T[]) => void;
 
 class State<T> {
@@ -29,21 +27,20 @@ export class ProjectState extends State<Project> {
     return this.instance;
   }
 
-  addProject(title: string, description: string, numberOfPeople: number) {
+  addProject(title: string, description: string, numOfPeople: number) {
     const newProject = new Project(
       Math.random().toString(),
       title,
       description,
-      numberOfPeople,
+      numOfPeople,
       ProjectStatus.Active
     );
-
     this.projects.push(newProject);
     this.updateListeners();
   }
 
   moveProject(projectId: string, newStatus: ProjectStatus) {
-    const project = this.projects.find((prj) => prj.id == projectId);
+    const project = this.projects.find(prj => prj.id === projectId);
     if (project && project.status !== newStatus) {
       project.status = newStatus;
       this.updateListeners();
@@ -57,5 +54,4 @@ export class ProjectState extends State<Project> {
   }
 }
 
-// Global Singlton
 export const projectState = ProjectState.getInstance();
