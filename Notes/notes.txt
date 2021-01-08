@@ -150,3 +150,14 @@ More on ES Modules: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guid
 ----------------------------------------------------------------
 Section 10: Webpack & TS
 ----------------------------------------------------------------
+TS support for packages without TS Support
+npm install --save-dev @types/react-router-dom
+
+----------------------------------------------------------------
+Section 12: React & TS 
+----------------------------------------------------------------
+Official React Docs: https://reactjs.org/docs/getting-started.html
+
+More React Resources: https://academind.com/learn/react/
+
+create-react-app + TypeScript Docs: https://create-react-app.dev/docs/adding-typescript/
